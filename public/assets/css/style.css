@@ -53,6 +53,7 @@ body {
 
 .user__infos_img img {
   width: 75%;
+  border-radius: 9999px;
 }
 
 .user__infos_text {
