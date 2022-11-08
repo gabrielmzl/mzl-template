@@ -1,0 +1,16 @@
+:root {
+  --background: #0c151d;
+  --background-contrast: #171F26;
+  --text-primary: #dedede;
+  --text-secondary: #B8C0C7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background-color: var(--background);
+}
