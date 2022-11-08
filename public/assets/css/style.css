@@ -185,3 +185,38 @@ body {
  font-size: 1.5rem;
  margin-bottom: 2rem;
 }
+
+.skills {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ gap: 1rem;
+ margin-bottom: 2.5rem;
+}
+
+.skill {
+ filter: grayscale(100%);
+ transition: .3s all ease-in-out;
+}
+
+.skill:hover {
+ filter: grayscale(0%);
+ transform: rotate(360deg);
+}
+
+footer {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-bottom: 2.5rem;
+}
+
+footer a {
+ display: flex;
+ align-items: centers;
+ justify-content: center;
+ gap: 0.5rem;
+ text-decoration: none;
+ color: var(--text-secondary);
+}
