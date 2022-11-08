@@ -94,6 +94,8 @@ body {
   margin-top: 2.5rem;
   text-align: center;
   flex-direction: column;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 #projects h1 {
@@ -103,8 +105,10 @@ body {
 }
 
 .projects {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
   row-gap: 2rem;
   column-gap: 3rem;
   margin-bottom: 2.5rem;
