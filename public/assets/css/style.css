@@ -6,6 +6,7 @@
   --text-secondary: #b8c0c7;
 
   --color-primary: #f26419;
+  --color-secondary: #b44c14;
 }
 
 * {
@@ -79,9 +80,108 @@ body {
   color: var(--text-primary);
   font-size: 1.5rem;
 
-  transition: .3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 .user__infos_social a:hover {
   color: var(--color-primary);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  text-align: center;
+  flex-direction: column;
+}
+
+#projects h1 {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: 2rem;
+  column-gap: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.project {
+  width: 27.5rem;
+  height: 13.5rem;
+  border-radius: 0.75rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project__info {
+  background: linear-gradient(180deg, rgba(242, 100, 25, 0.44) 0%, rgba(217, 217, 217, 0) 100%);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem 1.25rem;
+  align-items: flex-end;
+  transition-duration: .3s;
+  bottom: -100%;
+  position: absolute;
+  left: 0;
+}
+
+.project__info_text {
+  text-align: start;
+}
+
+.project__info_text h2 {
+ color: var(--text-primary);
+}
+
+.project__info_text p {
+ color: var(--text-secondary);
+ font-weight: 500;
+}
+
+.project__info_text a {
+ text-decoration: none;
+}
+
+.project__info_text a {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: var(--color-primary);
+ border: none;
+ border-radius: 0.5rem;
+ padding: 0.25rem;
+ margin-top: 1rem;
+ transition: .3s all ease-in-out;
+}
+
+.project__info_text a i {
+ color: var(--text-primary);
+ font-size: 2rem;
+}
+
+
+.project__info_text a:hover {
+ background-color: var(--color-secondary);
+}
+
+.project:hover .project__info {
+ bottom: 1%;
+}
+
+#skills h1 {
+ color: var(--text-primary);
+ font-size: 1.5rem;
+ margin-bottom: 2rem;
 }
