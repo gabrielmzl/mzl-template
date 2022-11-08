@@ -227,3 +227,9 @@ footer a {
   text-decoration: none;
   color: var(--text-secondary);
 }
+
+@media (max-width: 500px) {
+  .project {
+    width: auto;
+  }
+}
