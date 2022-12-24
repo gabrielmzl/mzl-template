@@ -76,7 +76,7 @@ body {
   margin-top: 2rem;
 }
 
-.user__infos_social div {
+.user__infos_social a {
   text-decoration: none;
   color: var(--text-primary);
   font-size: 1.5rem;
@@ -85,7 +85,7 @@ body {
   transition: 0.3s all ease-in-out;
 }
 
-.user__infos_social div:hover {
+.user__infos_social a:hover {
   color: var(--color-primary);
 }
 
