@@ -1,7 +1,7 @@
 function searchProjects() {
   const projectsDiv = document.querySelector('.projects');
 
-  axios('https://bohr.io/api/public/user/projects/gabrielmzl')
+  axios('https://bohr.io/api/public/user/projects/' + _BOHR_REPO_OWNER)
     .then((res) => {
       const projects = res.data
       projects.map((project) => {
@@ -50,4 +50,6 @@ function searchProjects() {
     });
 }
 
-searchProjects()
+searchProjects();
+
+document.querySelector('.user__infos_img img').src = 'https://github.com/' + _BOHR_REPO_OWNER + '.png';
