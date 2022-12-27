@@ -50,6 +50,14 @@ function searchProjects() {
     });
 }
 
+function getUserName() {
+  axios('https://api.github.com/users/' + _BOHR_REPO_OWNER)
+  .then((res) => {
+    document.querySelector('.user__infos_text h1').innerText = res.data.name;
+  })
+}
+
 searchProjects();
+getUserName();
 
 document.querySelector('.user__infos_img img').src = 'https://github.com/' + _BOHR_REPO_OWNER + '.png';
